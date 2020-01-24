@@ -1,0 +1,14 @@
+{
+  "name": "pp_02",
+  "version": "1.0.0",
+  "description": "landingPage for Pet Adoption App",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Artur G/gawron.me",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
