@@ -207,3 +207,51 @@
         width: 100%;
     }
 }
+
+.overview {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-gray-light-2);
+
+    &__heading {
+        font-size: 2.4rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.3rem 3rem;
+        color: var(--color-primary-light);
+    }
+
+    &__stars {
+        display: flex;
+        margin-right: auto;
+    }
+
+    &__icon-medal,
+    &__icon-location {
+        width: 1.75rem;
+        height: 1.75rem;
+        margin-right: .5rem;
+        fill: var(--color-primary);
+        transition: transform .2s;
+    }
+
+    &__location {
+        display: flex;
+        vertical-align: center;
+        margin-right: 2rem;
+    }
+
+    &__icon-medal:hover {
+        fill: var(--color-red);
+        transform: scale(1.2);
+    }
+
+    &__location:hover &__icon-location {
+        transform: scale(1.5);
+    }
+
+    .btn-inline:hover &__icon-location {
+        transform: scale(1.5);
+    }
+}
