@@ -54,6 +54,7 @@
         height: 2.8rem;
         width: 2.8rem;
         fill: var(--color-gray-dark-3);
+        cursor: pointer;
     }
 }
 
@@ -134,12 +135,16 @@
         width: 3px;
         transform: scaleY(0);
         background-color: var(--color-primary-light);
-        transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s;
+        transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s, background-color .1s;
     }
 
     &__item:hover::before {
         transform: scaleY(1);
         width: 100%;
+    }
+
+    &__item:active::before {
+        background-color: var(--color-primary);
     }
 
 
