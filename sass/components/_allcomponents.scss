@@ -133,8 +133,8 @@
         height: 100%;
         width: 3px;
         transform: scaleY(0);
-        background-color: var(--color-primary);
-        transition: transform .2s, width .4s .2s;
+        background-color: var(--color-primary-light);
+        transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s;
     }
 
     &__item:hover::before {
@@ -160,11 +160,12 @@
         width: 2.8rem;
         margin-right: 2rem;
         fill: currentColor;
-        transition: transform .5s .2s;
     }
 
     &__item:hover &__icon {
         transform: scale(1.4);
+        fill: var(--color-primary-dark);
+        transition: all .2s .4s;
     }
 }
 
