@@ -15,7 +15,33 @@
 <body>
     <div class="container">
         <header class="header">
-            HEADER
+            <img class="logo" src="img/logo.png" alt="Logo">
+            <form class="search" action="#">
+                <input class="search__input" type="text" placeholder="Jaki zwierzak cię interesuje?">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="img/sprite.svg#pawprint"></use>
+                    </svg>
+                </button>
+            </form>
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#smartphone"></use>
+                    </svg>
+                    <span class="user-nav__notyfication">3</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#conversation"></use>
+                    </svg>
+                    <span class="user-nav__notyfication">21</span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="img/user.jpg" alt="user photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Arturo</span>
+                </div>
+            </nav>
         </header>
         <div class="content">
             <nav class="sidebar">
@@ -26,6 +52,7 @@
             </main>
         </div>
     </div>
+    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div> -->
 </body>
 
 </html>
