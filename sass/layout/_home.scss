@@ -35,13 +35,14 @@
 
 .detail {
     display: flex;
+    font-size: 1.6rem;
+    color: var(--color-gray-dark-1);
     padding: 4rem;
     background-color: var(--color-gray-light-2);
 }
 
 .description {
     padding: 3rem;
-    font-size: 1.6rem;
     color: var(--color-gray-dark-1);
     flex: 0 0 60%;
     background-color: #fff;
@@ -49,7 +50,6 @@
     margin-right: 4rem;
 }
 
-.pet-review {
+.pet-reviews {
     flex: 1;
-    background-color: green;
 }
