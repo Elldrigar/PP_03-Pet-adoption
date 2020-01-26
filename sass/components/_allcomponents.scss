@@ -154,7 +154,8 @@
         transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s, background-color .1s;
     }
 
-    &__item:hover::before {
+    &__item:hover::before,
+    &__item--active::before {
         transform: scaleY(1);
         width: 100%;
     }
@@ -187,6 +188,11 @@
         transform: scale(1.4);
         fill: var(--color-primary-dark);
         transition: all .2s .4s;
+    }
+
+    &__item--active &__icon {
+        transform: scale(1.4);
+        fill: var(--color-primary-dark);
     }
 }
 
@@ -293,4 +299,26 @@
     }
 }
 
-.recommend {}
+.recommend {
+    display: flex;
+    font-size: 1.4rem;
+    color: var(--color-gray-dark-3);
+    align-items: center;
+
+    &__count {
+        margin-right: auto;
+    }
+
+    &__photo {
+        box-sizing: content-box;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: 3px solid #fff;
+
+        &:not(:last-child) {
+            margin-right: -1.5rem;
+        }
+    }
+
+}
