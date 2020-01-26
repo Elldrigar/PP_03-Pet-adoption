@@ -311,6 +311,10 @@
         margin-right: auto;
     }
 
+    &__friends {
+        display: flex;
+    }
+
     &__photo {
         box-sizing: content-box;
         height: 4rem;
@@ -331,6 +335,7 @@
     box-shadow: var(--shadow-light);
     padding: 3rem;
     margin-bottom: 3.5rem;
+
 
     &__text {
         position: relative;
@@ -384,5 +389,16 @@
         transform: rotate(21deg);
         z-index: 1;
     }
+}
 
+.cta {
+    padding: 3.5rem 0;
+    text-align: center;
+
+    &__adopt-now {
+        font-size: 2.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+    }
 }
