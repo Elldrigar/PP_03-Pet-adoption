@@ -272,6 +272,8 @@
     border-bottom: var(--line);
 
     &__item {
+        display: flex;
+        align-items: center;
         flex: 0 0 50%;
         margin-bottom: .7rem;
     }
@@ -279,10 +281,16 @@
     &__item::before {
         content: "";
         display: inline-block;
-        height: 2rem;
-        width: 2rem;
+        height: 2.5rem;
+        width: 2.5rem;
         margin-right: .6rem;
-        background-image: url(../../img/paw.svg);
-        background-size: cover;
+        margin-left: .2rem;
+        background-color: var(--color-primary-light);
+        mask-image: url(../../img/paw.svg);
+        mask-size: cover;
+        // background-image: url(../../img/paw.svg);
+        // background-size: cover;
     }
 }
+
+.recommend {}
