@@ -16,6 +16,10 @@
         font-weight: 100;
         text-transform: uppercase;
         color: #000;
+
+        @media only screen and (max-width: $brp-small) {
+            display: none;
+        }
     }
 }
 
@@ -24,6 +28,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: $brp-xsmall) {
+        order: 1;
+        flex: 0 0 100%;
+    }
 
     &__input {
         font-family: inherit;
@@ -193,6 +202,11 @@
             justify-content: center;
             padding: 2rem;
         }
+
+        @media only screen and (max-width: $brp-small) {
+            flex-direction: column;
+            padding: 1.5rem .5rem;
+        }
     }
 
     &__icon {
@@ -200,6 +214,13 @@
         width: 2.8rem;
         margin-right: 2rem;
         fill: currentColor;
+
+        @media only screen and (max-width: $brp-small) {
+            margin-right: 0;
+            margin-bottom: .7rem;
+            width: 2rem;
+            height: 2rem;
+        }
     }
 
     &__item:hover &__icon {
@@ -241,6 +262,10 @@
     align-items: center;
     border-bottom: 1px solid var(--color-gray-light-2);
 
+    @media only screen and (max-width: $brp-small) {
+        justify-content: space-between;
+    }
+
     &__heading {
         font-size: 2.4rem;
         font-weight: 300;
@@ -248,11 +273,22 @@
         letter-spacing: 1px;
         padding: 1.3rem 3rem;
         color: var(--color-primary-light);
+
+        @media only screen and (max-width: $brp-small) {
+            font-size: 1.8rem;
+            padding: 1.1rem 2rem;
+            letter-spacing: 0;
+        }
     }
 
     &__stars {
         display: flex;
         margin-right: auto;
+
+        @media only screen and (max-width: $brp-small) {
+            display: none;
+
+        }
     }
 
     &__icon-medal,
@@ -262,6 +298,12 @@
         margin-right: .5rem;
         fill: var(--color-primary);
         transition: transform .2s;
+
+        @media only screen and (max-width: $brp-small) {
+            width: 1.3rem;
+            height: 1.3rem;
+            margin-right: .2rem;
+        }
     }
 
     &__location {
